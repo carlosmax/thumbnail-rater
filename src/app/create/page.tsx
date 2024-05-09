@@ -15,6 +15,7 @@ import { useToast } from "@/components/ui/use-toast"
 
 import "@xixixao/uploadstuff/react/styles.css"
 import { useRouter } from "next/navigation"
+import { getImageUrl } from "@/lib/utils"
 
 const defaultErrorState = {
   title: "",
@@ -33,13 +34,6 @@ const CreatePage = () => {
   const [errors, setErrors] = useState(defaultErrorState)
 
   const { toast } = useToast()
-
-  const getImageUrl = (storageId: string) => {
-    const url = new URL(`${process.env.NEXT_PUBLIC_CONVEX_SITE_URL}/getImage`)
-    url.searchParams.set("storageId", storageId)
-
-    return url.toString()
-  }
 
   return (
     <div className="mt-16">
