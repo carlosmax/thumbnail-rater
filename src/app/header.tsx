@@ -16,6 +16,9 @@ export const Header = () => {
               Dashboard
             </Link>
             <Link href="/create">Create Test</Link>
+            <Link href="/explore" className="link">
+              Explore
+            </Link>
           </SignedIn>
           <SignedOut>
             <Link href="/pricing">Pricing</Link>
