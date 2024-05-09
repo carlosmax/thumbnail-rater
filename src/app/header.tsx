@@ -10,8 +10,11 @@ export const Header = () => {
       <div className="h-16 container flex justify-between items-center">
         <div>ThumbnailRater</div>
 
-        <div className="space-x-4">
+        <div className="flex gap-8">
           <SignedIn>
+            <Link href="/dashboard" className="link">
+              Dashboard
+            </Link>
             <Link href="/create">Create Test</Link>
           </SignedIn>
           <SignedOut>
