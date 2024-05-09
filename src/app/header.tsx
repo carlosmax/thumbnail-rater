@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <div className="border-b">
       <div className="h-16 container flex justify-between items-center">
-        <div>ThumbnailRater</div>
+        <Link href="/">ThumbnailRater</Link>
 
         <div className="flex gap-8">
           <SignedIn>
