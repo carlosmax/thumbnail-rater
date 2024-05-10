@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stripe:listen": "stripe listen --forward-to https://dusty-stoat-819.convex.site/stripe",
+    "stripe:trigger": "stripe trigger payment_intent.succeeded"
   },
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.0.4",
     "@clerk/localizations": "^2.3.1",
     "@clerk/nextjs": "^5.0.7",
     "@radix-ui/react-avatar": "^1.0.4",
@@ -27,6 +30,8 @@
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
+    "stripe": "^15.6.0",
+    "svix": "^1.24.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
